@@ -1,0 +1,4 @@
+@prefix id: <http://test.com/id/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+id:aldo foaf:name "Aldo Bucchi" .

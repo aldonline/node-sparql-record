@@ -1,0 +1,5 @@
+.DS_Store
+test/db/work/*
+node_modules
+localnotes.md
+localnotes.txt

@@ -1,0 +1,17 @@
+{
+  "name": "sparql-record",
+  "description": "Simple Active Recordish layer atop SPARQL",
+  "version": "0.0.1",
+  "author": "Aldo Bucchi <aldo.bucchi@gmail.com>",
+  "dependencies": {
+   "sparql": ">=0.0.1",
+    "coffee-script": ">= 1.0.0"
+  },
+  "scripts" : { 
+    "test" : "expresso"
+  },
+  "keywords": ["sparql", "active record", "rdf", "linked data", "virtuoso"],
+  "directories": { "lib": "./lib" },
+  "engines": { "node": ">= 0.4" },
+  "repository" : "git://github.com/aldonline/node-sparql-record.git"
+}
