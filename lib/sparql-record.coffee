@@ -40,7 +40,7 @@ class Field
   validate : (data, cb) ->
     data = array_box data
     card_ok = test_cardinality data.length, @cardinality
-    return cb( 'Cardinality Error' ) unless card_ok
+    return cb 'Cardinality Error' unless card_ok
     # TODO: validate content
     cb null, yes
   
@@ -134,6 +134,8 @@ save_record = (client, graph, uri, fields, record, cb) ->
   pending = 0
   pending++ for own k of fields
   # fire in parallel
+  # TODO: transactions ( not yet supported by SPARQL HTTP )
+  # the sparql.Client should implement an API anyhow
   for own field_name, field of fields
     field.execute_update client, graph, uri, record[field_name], (err, res) ->
       if err?
